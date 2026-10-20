@@ -1,0 +1,436 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <title>|| HRM ||</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+    <!-- Header -->
+
+    <header>
+        <div class="container-fluid h-100">
+            <div class="d-flex align-items-center justify-content-between h-100">
+                <div class="d-flex align-items-center">
+                    <div class="_logo">
+                        <a href="javascript:;">
+                            <img src="images/logo.svg" alt="image" />
+                        </a>
+                    </div>
+                    <div class="hamburger">
+                        <span class="bar-1"></span>
+                        <span class="bar-2"></span>
+                        <span class="bar-3"></span>
+                    </div>
+                    <div class="logo-txt">
+                        Human Resources Module
+                    </div>
+                </div>
+                <div class="d-flex align-items-center">
+                    <div class="head-input">
+                        <input type="text"  placeholder="Type in to search..">
+                        <i class="srch-icn"><img src="images/Search.svg" alt="icon"></i>
+                    </div>
+                    <div>
+                        <ul class="d-flex head-list">
+                            <li>
+                                <a href="javascript:;" class="head-icon">
+                                    <img src="images/Notification.svg" alt="icon" />
+                                    <div class="h-badge">3</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="head-icon">
+                                    <img src="images/Message.svg" alt="icon" />
+                                    <div class="h-badge">1</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="head-icon active">
+                                    <img src="images/Dashboard.svg" alt="icon" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dropdown drop_down">
+                        <div class="d-flex align-items-center">
+                            <div class="drop-image">
+                                <div class="drop-widget">
+                                    <img src="images/user-avatar.svg" alt="image" class="w-100" />
+                                </div>
+                            </div>
+                            <div>
+                                <a class="drop-name dropdown-toggle"  id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span>Hello,</span> <strong>John Doe</strong>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Left Nav Bar -->
+
+    <div class="left-nav">
+        <ul>
+            <li>
+                <a class="d-flex align-items-center" href="dashboard.html">
+                    <div class="icn">
+                        <img src="images/Dashboard.svg" alt="icon" />
+                    </div>
+                    <div class="icn-name">
+                        Dashboard
+                    </div>
+                    <i class="arrow-show">
+                        <img src="images/right-arrow-inactive.svg" alt="icon" />
+                    </i>
+                    <i class="arrow-hide">
+                        <img src="images/right-arrow-active.svg" alt="icon" />
+                    </i>
+                </a>
+            </li>
+            <li>
+                <a class="d-flex align-items-center" href="add-human-reources.html">
+                    <div class="icn">
+                        <img src="images/add-human-resources.svg" alt="icon" />
+                    </div>
+                    <div class="icn-name">
+                        Add Human Resources
+                    </div>
+                    <i class="arrow-show">
+                        <img src="images/right-arrow-inactive.svg" alt="icon" />
+                    </i>
+                    <i class="arrow-hide">
+                        <img src="images/right-arrow-active.svg" alt="icon" />
+                    </i>
+                </a>
+            </li>
+            <li>
+                <a class="d-flex align-items-center" href="drafts-saved.html">
+                    <div class="icn">
+                        <img src="images/draft-saved.svg" alt="icon" />
+                    </div>
+                    <div class="icn-name">
+                        Drafts Saved
+                    </div>
+                    <i class="arrow-show">
+                        <img src="images/right-arrow-inactive.svg" alt="icon" />
+                    </i>
+                    <i class="arrow-hide">
+                        <img src="images/right-arrow-active.svg" alt="icon" />
+                    </i>
+                </a>
+            </li>
+            <li>
+                <a class="d-flex align-items-center" href="modify-details.html">
+                    <div class="icn">
+                        <img src="images/modify-details.svg" alt="icon" />
+                    </div>
+                    <div class="icn-name">
+                        Modify Details
+                    </div>
+                    <i class="arrow-show">
+                        <img src="images/right-arrow-inactive.svg" alt="icon" />
+                    </i>
+                    <i class="arrow-hide">
+                        <img src="images/right-arrow-active.svg" alt="icon" />
+                    </i>
+                </a>
+            </li>
+            <li>
+                <a class="d-flex align-items-center" href="financial-exposure.html">
+                    <div class="icn">
+                        <img src="images/financial-exposure.svg" alt="icon" />
+                    </div>
+                    <div class="icn-name">
+                        Financial Exposure
+                    </div>
+                    <i class="arrow-show">
+                        <img src="images/right-arrow-inactive.svg" alt="icon" />
+                    </i>
+                    <i class="arrow-hide">
+                        <img src="images/right-arrow-active.svg" alt="icon" />
+                    </i>
+                </a>
+            </li>
+            <li>
+                <a class="d-flex align-items-center" href="list-of-human-resource.html">
+                    <div class="icn">
+                        <img src="images/list-of-human-resources.svg" alt="icon" />
+                    </div>
+                    <div class="icn-name">
+                        List Of Human Resources
+                    </div>
+                    <i class="arrow-show">
+                        <img src="images/right-arrow-inactive.svg" alt="icon" />
+                    </i>
+                    <i class="arrow-hide">
+                        <img src="images/right-arrow-active.svg" alt="icon" />
+                    </i>
+                </a>
+            </li>
+            <li>
+                <a class="d-flex align-items-center" href="manage-access.html">
+                    <div class="icn">
+                        <img src="images/manage-access.svg" alt="icon" />
+                    </div>
+                    <div class="icn-name">
+                        Manage Access
+                    </div>
+                    <i class="arrow-show">
+                        <img src="images/right-arrow-inactive.svg" alt="icon" />
+                    </i>
+                    <i class="arrow-hide">
+                        <img src="images/right-arrow-active.svg" alt="icon" />
+                    </i>
+                </a>
+            </li>
+            <li>
+                <a class="d-flex align-items-center" href="reports.html">
+                    <div class="icn">
+                        <img src="images/Reports.svg" alt="icon" />
+                    </div>
+                    <div class="icn-name">
+                        Reports
+                    </div>
+                    <i class="arrow-show">
+                        <img src="images/right-arrow-inactive.svg" alt="icon" />
+                    </i>
+                    <i class="arrow-hide">
+                        <img src="images/right-arrow-active.svg" alt="icon" />
+                    </i>
+                </a>
+            </li>
+            <li>
+                <a class="d-flex align-items-center active" href="settings.html">
+                    <div class="icn">
+                        <img src="images/Settings.svg" alt="icon" />
+                    </div>
+                    <div class="icn-name">
+                        Settings
+                    </div>
+                    <i class="arrow-show">
+                        <img src="images/right-arrow-inactive.svg" alt="icon" />
+                    </i>
+                    <i class="arrow-hide">
+                        <img src="images/right-arrow-active.svg" alt="icon" />
+                    </i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Center Widget -->
+
+    <div class="main-widget">
+        <ul class="nav nav-tabs custom-tab" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link " id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">General</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">HR Codification</button>
+            </li>
+        </ul>
+        <div class="tab-content pt-4 pb-4" id="myTabContent">
+            <div class="tab-pane fade " id="home" role="tabpanel" aria-labelledby="home-tab">
+                NO DATA FOUND
+            </div>
+            <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="table-responsive">
+                    <table class="table  custom-table">
+                        <thead>
+                            <tr>
+                                <th>Section A</th>
+                                <th>Departments</th>
+                                <th></th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Section A1</td>
+                                <td>Department 1</td>
+                                <td>Finance</td>
+                                <td>
+                                    <button class="table-btn mr-10"><img src="images/Edit.svg" alt="icon"> <span>Edit</span></button>
+                                    <button class="table-btn"><img src="images/Delete.svg" class="w-13" alt="icon"> <span>Delete</span></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Section A2</td>
+                                <td>Department 2</td>
+                                <td>Marketing</td>
+                                <td>
+                                    <button class="table-btn mr-10"><img src="images/Edit.svg" alt="icon"> <span>Edit</span></button>
+                                    <button class="table-btn"><img src="images/Delete.svg" class="w-13" alt="icon"> <span>Delete</span></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Section A3</td>
+                                <td>Department 3</td>
+                                <td>Business Development</td>
+                                <td>
+                                    <button class="table-btn mr-10"><img src="images/Edit.svg" alt="icon"> <span>Edit</span></button>
+                                    <button class="table-btn"><img src="images/Delete.svg" class="w-13" alt="icon"> <span>Delete</span></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Section A3</td>
+                                <td>Department 4</td>
+                                <td>Human Resourse</td>
+                                <td>
+                                    <button class="table-btn mr-10"><img src="images/Edit.svg" alt="icon"> <span>Edit</span></button>
+                                    <button class="table-btn"><img src="images/Delete.svg" class="w-13" alt="icon"> <span>Delete</span></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="d-flex flex-row-reverse">
+                    <button class="add-more-btn">
+                        <img src="images/Add-More.svg" alt="icon" />
+                        <span>Add More</span>
+                    </button>
+                </div>
+                <div class="table-responsive mt-3">
+                    <table class="table  custom-table">
+                        <thead>
+                            <tr>
+                                <th>Section B</th>
+                                <th>Designations</th>
+                                <th></th>
+                                <th></th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Section A1</td>
+                                <td>Designation Name 1</td>
+                                <td>Select Department</td>
+                                <td>Name Designation</td>
+                                <td>
+                                    <button class="table-btn mr-10"><img src="images/Edit.svg" alt="icon"> <span>Edit</span></button>
+                                    <button class="table-btn"><img src="images/Delete.svg" class="w-13" alt="icon"> <span>Delete</span></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Section A2</td>
+                                <td>Designation Name 2</td>
+                                <td>Select Department</td>
+                                <td>Name Designation</td>
+                                <td>
+                                    <button class="table-btn mr-10"><img src="images/Edit.svg" alt="icon"> <span>Edit</span></button>
+                                    <button class="table-btn"><img src="images/Delete.svg" class="w-13" alt="icon"> <span>Delete</span></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Section A3</td>
+                                <td>Designation Name 3</td>
+                                <td>Select Department</td>
+                                <td>Name Designation</td>
+                                <td>
+                                    <button class="table-btn mr-10"><img src="images/Edit.svg" alt="icon"> <span>Edit</span></button>
+                                    <button class="table-btn"><img src="images/Delete.svg" class="w-13" alt="icon"> <span>Delete</span></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Section A4</td>
+                                <td>Designation Name 4</td>
+                                <td>Select Department</td>
+                                <td>Name Designation</td>
+                                <td>
+                                    <button class="table-btn mr-10"><img src="images/Edit.svg" alt="icon"> <span>Edit</span></button>
+                                    <button class="table-btn"><img src="images/Delete.svg" class="w-13" alt="icon"> <span>Delete</span></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="d-flex flex-row-reverse">
+                    <button class="add-more-btn">
+                        <img src="images/Add-More.svg" alt="icon" />
+                        <span>Add More</span>
+                    </button>
+                </div>
+                <div class="table-responsive mt-3">
+                    <table class="table  custom-table">
+                        <thead>
+                            <tr>
+                                <th>Section A</th>
+                                <th>Departments</th>
+                                <th></th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Section A1</td>
+                                <td>Category Name 1</td>
+                                <td>Permanent</td>
+                                <td>
+                                    <button class="table-btn mr-10"><img src="images/Edit.svg" alt="icon"> <span>Edit</span></button>
+                                    <button class="table-btn"><img src="images/Delete.svg" class="w-13" alt="icon"> <span>Delete</span></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Section A2</td>
+                                <td>Category Name 2</td>
+                                <td>Temporarry</td>
+                                <td>
+                                    <button class="table-btn mr-10"><img src="images/Edit.svg" alt="icon"> <span>Edit</span></button>
+                                    <button class="table-btn"><img src="images/Delete.svg" class="w-13" alt="icon"> <span>Delete</span></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Section A3</td>
+                                <td>Category Name 3</td>
+                                <td>Outsource</td>
+                                <td>
+                                    <button class="table-btn mr-10"><img src="images/Edit.svg" alt="icon"> <span>Edit</span></button>
+                                    <button class="table-btn"><img src="images/Delete.svg" class="w-13" alt="icon"> <span>Delete</span></button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Section A4</td>
+                                <td>Category Name 4</td>
+                                <td>Consultant</td>
+                                <td>
+                                    <button class="table-btn mr-10"><img src="images/Edit.svg" alt="icon"> <span>Edit</span></button>
+                                    <button class="table-btn"><img src="images/Delete.svg" class="w-13" alt="icon"> <span>Delete</span></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="d-flex flex-row-reverse">
+                    <button class="add-more-btn">
+                        <img src="images/Add-More.svg" alt="icon" />
+                        <span>Add More</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+
+</body>
+</html>

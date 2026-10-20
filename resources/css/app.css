@@ -1,0 +1,161 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+@layer components {
+    .hr-header {
+        @apply fixed inset-x-0 top-0 z-30 h-[88px] bg-gradient-to-r from-[#866F9F] to-[#2789CE] shadow-md;
+    }
+
+    .hr-sidebar {
+        @apply fixed bottom-0 left-0 top-[88px] z-20 hidden w-[280px] bg-[#7f71a0] pt-3 text-white md:block;
+    }
+
+    .hr-nav-link {
+        @apply flex min-h-12 items-center gap-3 rounded-md px-4 text-sm font-medium text-white/85 transition hover:bg-white/10 hover:text-white;
+    }
+
+    .hr-nav-active {
+        @apply bg-gradient-to-r from-[#2789CE] to-[#a18ab8] text-white shadow-sm;
+    }
+
+    .hr-sidebar-collapsed {
+        @apply w-20;
+    }
+
+    .hr-sidebar-collapsed .hr-nav-link {
+        @apply justify-center px-2;
+    }
+
+    .hr-sidebar-collapsed .hr-nav-label,
+    .hr-sidebar-collapsed .hr-sidebar-caption,
+    .hr-sidebar-collapsed .hr-nav-soon {
+        @apply hidden;
+    }
+
+    .hr-filter-input {
+        @apply h-11 w-full rounded-md border border-slate-300 bg-[#fafafa] px-3 text-sm text-slate-800 outline-none transition placeholder:text-slate-400 focus:border-[#587cb6] focus:ring-2 focus:ring-sky-100;
+    }
+
+    .hr-primary-button {
+        @apply inline-flex h-11 items-center justify-center rounded-md bg-gradient-to-r from-[#866F9F] to-[#2789CE] px-5 text-sm font-semibold uppercase tracking-wide text-white transition hover:brightness-105 focus:outline-none focus:ring-4 focus:ring-sky-100;
+    }
+
+    .hr-secondary-button {
+        @apply inline-flex h-11 items-center justify-center rounded-md border border-slate-300 bg-white px-4 text-sm font-semibold text-slate-700 transition hover:bg-slate-50;
+    }
+
+    .hr-outline-button {
+        @apply inline-flex items-center gap-2 rounded-md border border-[#587cb6] px-4 py-2 text-sm font-medium text-[#587cb6] transition hover:bg-sky-50;
+    }
+
+    .hr-form-control {
+        @apply mt-1.5 block min-h-11 w-full rounded-md border border-slate-300 bg-[#fafafa] px-3 py-2 font-normal text-slate-800 outline-none transition focus:border-[#587cb6] focus:ring-2 focus:ring-sky-100;
+    }
+
+    .hr-form-tab {
+        @apply border-b-2 border-transparent px-5 py-3 text-sm font-medium text-slate-500 transition hover:text-[#587cb6];
+    }
+
+    .hr-form-tab-active {
+        @apply border-[#587cb6] text-[#587cb6];
+    }
+
+    .hr-main {
+        @apply min-h-screen pt-[88px];
+    }
+}
+
+.auth-panel {
+    background: linear-gradient(135deg, #f8fbff 0%, #fff 52%, #eef5fb 100%);
+}
+
+.auth-art {
+    background-color: #101a37;
+    background-image: linear-gradient(135deg, rgb(16 26 55 / 82%), rgb(16 26 55 / 35%));
+    background-position: center;
+    background-size: cover;
+}
+
+.hr-toast {
+    @apply fixed right-4 top-4 z-[100] flex w-[min(26rem,calc(100vw-2rem))] items-start gap-3 rounded-lg border bg-white p-4 text-sm shadow-xl;
+    animation: hr-toast-in 180ms ease-out;
+}
+
+.hr-toast-error {
+    @apply border-rose-200 text-rose-900;
+}
+
+.hr-toast-success {
+    @apply border-emerald-200 text-emerald-900;
+}
+
+.hr-toast-icon {
+    @apply flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-rose-100 font-bold text-rose-700;
+}
+
+.hr-toast-success .hr-toast-icon {
+    @apply bg-emerald-100 text-emerald-700;
+}
+
+.hr-toast-close {
+    @apply -mt-1 rounded px-1 text-xl leading-6 text-slate-400 hover:bg-slate-100 hover:text-slate-700;
+}
+
+.hr-processing-overlay {
+    @apply fixed inset-0 z-[90] flex items-center justify-center bg-slate-950/35 p-4 backdrop-blur-[2px];
+}
+
+.hr-processing-card {
+    @apply flex min-w-64 flex-col items-center rounded-xl bg-white px-8 py-7 text-center shadow-2xl;
+}
+
+.hr-spinner {
+    @apply mb-4 h-9 w-9 rounded-full border-4 border-sky-100 border-t-[#2789CE];
+    animation: hr-spin 800ms linear infinite;
+}
+
+@keyframes hr-spin {
+    to { transform: rotate(360deg); }
+}
+
+@keyframes hr-toast-in {
+    from { opacity: 0; transform: translateY(-8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 767px) {
+    .hr-header {
+        @apply h-16;
+    }
+
+    .hr-main {
+        @apply pb-20 pt-16;
+    }
+
+    .hr-sidebar-open {
+        display: block;
+        top: 4rem;
+        bottom: 0;
+        z-index: 40;
+        width: 17.5rem;
+    }
+
+    .hr-mobile-nav {
+        @apply fixed inset-x-0 bottom-0 z-30 grid grid-cols-3 border-t border-slate-200 bg-white px-2 py-2 shadow-[0_-4px_16px_rgb(15_23_42_/_0.08)];
+    }
+
+    .hr-mobile-link {
+        @apply flex flex-col items-center gap-1 rounded-md px-2 py-1 text-[11px] font-medium text-slate-500;
+    }
+
+    .hr-mobile-active {
+        @apply text-sky-700;
+    }
+}
